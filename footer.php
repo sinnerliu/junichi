@@ -1,4 +1,5 @@
 		<footer id="footer" class="inner">
+		<span>博客已运行</span><span id="span_dt_dt"></span><br>
 			&copy; <?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a> 由 <a href="http://www.typecho.org" target="_blank">Typecho</a> 强力驱动 Theme is <a href="https://uefeng.com" target="_blank">Junichi</a>
 		</footer>
 	</div>
