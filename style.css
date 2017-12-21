@@ -102,9 +102,8 @@ a:hover {
     position: fixed;
     width: 270px;
     height: 100%;
-    background-color: #1fa4b5;
+    background-color: #3683cfc2;
     background-size: cover;
-    background-image: url(images/left-bg.jpg);
     text-align: center
 }
 
