@@ -22,13 +22,14 @@
 	'tag'       =>  _t(' %s '),
 	'author'    =>  _t(' %s ')
 	), '', ' - '); ?><?php $this->options->title(); ?></title>
+  
 </head>
 <body>
 <!--[if lt IE 9]>
 	<div class="browsehappy" role="dialog">你正在使用一个过时的浏览器，为了正常的访问, 请<a href="http://browsehappy.com/" target="_blank">升级你的浏览器</a>以查看此页面。</div>
 <![endif]-->
 <div class="container">
-    <div class="left-col" style="background-image: url(<?php if($this->options->iosicon): $this->options->iosicon();endif; ?>);">
+    <div class="left-col" style="background-image: url(<?php if($this->options->iosicon): $this->options->iosicon();else: $this->options->themeUrl('images/left-bg.jpg');endif; ?>);">
         <header id="header">
             <div class="profilepic"><a href="/" style="background-image: url(<?php if($this->options->touxiang): $this->options->touxiang(); else: $this->options->themeUrl('images/touxiang.png');endif; ?>);"></a></div>
             <h1><a href="/"><?php $this->options->title() ?></a></h1>
@@ -36,9 +37,11 @@
             <nav id="main-nav">
                 <ul>
                    <li><a href="<?php $this->options->siteUrl(); ?>"><i class="iconfont icon-home"></i>首页</a></li>
-                   <li><a href="<?php $this->options->siteUrl(); ?>about.html"><i class="iconfont icon-aboutus"></i>关于</a></li>
+                   <li><a href="<?php $this->options->siteUrl(); ?>categories.html"><i class="iconfont icon-collect"></i>分类</a></li>
                    <li><a href="<?php $this->options->siteUrl(); ?>archives.html"><i class="iconfont icon-collect"></i>归档</a></li>
                    <li><a href="<?php $this->options->siteUrl(); ?>links.html"><i class="iconfont icon-links"></i>友链</a></li>
+                   <li><a href="<?php $this->options->siteUrl(); ?>about.html"><i class="iconfont icon-aboutus"></i>关于</a></li>
+
                 </ul>
             </nav>
             <nav id="sub-nav">
